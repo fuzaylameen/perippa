@@ -7,31 +7,126 @@
     <title>JAI</title>
     <style>
         *{
-            background-color: #FFF4B7;
+            background-color: black;
         }
+        
+        .head{
+            position: relative;
+            top: -20px;
+        }
+
         h1{
             text-align: center;
-            color:#000B58 ;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            font-weight:900;
-        }
-        h2{
-            text-align: center;
-            color: #003161;
+            color: whitesmoke;
             font-family: "Cedarville Cursive", cursive;
              font-weight: 900;
              font-style: normal;
+             
+        }
+
+        .line{
+            height: 15px;
+            width: 50%;
+            background-color: yellow;
+            position: relative;
+            left: 25%;
         }
             .note{
                 background-color: aqua;
             }
-            p{
+            .story{
                 font-weight: 600;
-            }
+                color: white;
+                font-family: "Poppins", sans-serif;
+                padding: 20px;
             
+            }
+
+            .block1{
+                margin: 50px 50px 0px 50px;
+            }
+            img.pic{
+                float: left;
+                padding: 5px;
+                margin-left: 30px;
+                margin-right: 10px;
+                border-radius: 20px;
+                border: 2px solid yellow;
+            }
+            .logo{
+                position: relative;
+                left: 33%;
+                top: 20px;
+                height: 70px;
+            }
+            footer{
+                color: black;
+                font-family: "Poppins", sans-serif;
+                font-weight: 600;
+                clear: both;
+                text-align: center;
+                background-color: yellow;
+                position: relative;
+                top: 30px;
+                left: 25%;
+                width: 50%;
+                height: 20px;
+                
+            }
+            .high{
+                color: yellow;
+            }
+
+
+
+            @media (max-width:680px){
+                .logo{
+                    position: relative;
+                    left: 20px;
+                    height: 50px;
+                }
+                h1{
+                    text-align: center;
+                    color: whitesmoke;
+                    font-family: "Cedarville Cursive", cursive;
+                    font-weight: 900;
+                    font-style: normal;
+                    font-size: 20px;
+                 }
+                 .head{
+                    position: relative;
+                    top: -10px;
+                 }
+                 .line{
+                    height: 5px;
+                    width: 100%;
+                    left: 0%;
+                 }
+                 .block1{
+                    margin: 2%;
+                 }
+                 img.pic{
+                    position: relative;
+                    left: 20px;
+                    display: block;
+                    float: none;
+                    z-index: +2;
+                 }
+                 footer{
+                    width: 100%;
+                    left: 0%;
+                 }
+
+
+
+            }
+
 
         
     </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Pacifico&display=swap" rel="stylesheet">
@@ -40,12 +135,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>JAI HARISH</h1>
-    <H2>"The life of a good friend"</H2><hr/>
-    <img draggable="true" src="./perippa.jpg" alt="jai the perippa" height="300"/>
-    <p>Jai Harish is the kind of college student everyone wishes to have as a friend. Always supportive, he lend a listening ear and offer wise advice when needed. His infectious enthusiasm makes even the most mundane study sessions enjoyable. Known for their reliability, Jai Harish is the first to organize group projects, ensuring everyone feels included. With a knack for humor, they lighten the mood during stressful exam periods. Beyond academics, Jai Harish is actively involved in community service, reflecting his genuine compassion. His positive energy and unwavering loyalty make them not just a great friend, but also an inspiring presence in the lives of those around them.</p>
-    <hr/>
+    <img src="./JAI HARISH.png" alt="logo" class="logo"/>
+    <div class="head"><H1>"The life of a good friend"</H1>
+        <div class="line"></div>
+    </div>
+    <div class="block1">
+        <img draggable="true" class="pic" src="./perippa.jpg" alt="jai the perippa" height="300"/>
+        <div class="story">
+            <p><span class="high">Jai Harish</span>  is the kind of college student everyone wishes to have as a friend. Always supportive, he lend a listening ear and offer wise advice when needed. His infectious enthusiasm makes even the most mundane study sessions enjoyable. Known for their reliability,<span class="high">Jai Harish</span>  is the first to organize group projects, ensuring everyone feels included. With a knack for humor, they lighten the mood during stressful exam periods. Beyond academics, <span class="high">Jai Harish</span>  is actively involved in community service, reflecting his genuine compassion. His positive energy and unwavering loyalty make them not just a great friend, but also an inspiring presence in the lives of those around them.</p>
+        </div>
+    </div>
+    <div class="circle"></div>
     <a href="./photos.html">CLICK HERE TO VIEW MORE PHOTOS OF HIM</a>
-    <br class="note"/><br class="note"/><br class="note"/><h3 class="note">THANKS TO FUZAYL AMEEN FOR MAKING THIS PAGE</h3>
+    <footer> CREDITS:FUZAYL AMEEN</footer>
 </body>
 </html>
