@@ -1,8 +1,145 @@
-<ul>
-    <h3> a cute image of jai staring</h3>
-    <li><img src="./P1.jpg" alt="perippa staring" height="400"/></li>
-    <h3>a joyful image of jai smiling</h3>
-    <li><img src="./P2.jpg" alt="perippa smiling" height="400"/></li>
-    <h3>unfortunate image of jai being frustrated</h3>
-    <li><img src="./P3.jpg" alt="perippa frustrated" height="400"/></li>
-</ul>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: "Poppins", sans-serif;
+            margin: 50px 50px 0 50px;
+            background-color:black;
+            display: flex;
+            flex-direction: column;
+            min-height: 95vh;   
+            color: white; 
+        }
+        h1{
+            left: 25%;
+            text-align: center;
+            color: white;
+            font-size: 5rem;
+
+        }
+
+        .heart{
+            position: absolute;
+            height: 100px;
+            width: 100px;
+            left: 25%;
+            top: px;
+        }
+        .title{
+            color: yellow;
+        }
+
+        .ph{
+            height: 200px;
+            width: 200px;
+            margin-right: 20px;
+            border-radius: 10px;
+            float: left;
+        }
+        .card{
+            width: 45%;
+            display: inline-block;
+            margin-bottom: 50px;
+        }
+
+        .one{
+            float: left;
+        
+        }
+
+        .two{
+            float: right;
+        }
+        footer{
+            background-color: blueviolet;
+            clear: both;
+            margin-left: 0px;
+            text-align: center;
+        }
+        .three{
+            float: left;
+        }
+        .four{
+            float: right;
+        }
+        @media(max-width:680px){
+            h1{
+            left: 25%;
+            text-align: center;
+            color: white;
+            font-size: 3rem;
+        }
+        .card{
+            display: block;
+            width: 100%;
+        }
+        .ph{
+            float: none;
+            width: 100%;
+            height: 300px;
+        }
+        .heart{
+            height: 100px;
+            width: 100px;
+            position:absolute;
+            z-index: -1;
+        }
+        
+
+        }
+
+
+
+
+
+    </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">   
+</head>
+<body>
+    <img src="./heart.png" class="heart"/>
+    <div class="main">
+    <h1>My <span class="title">Lovely</span> Pics</h1>
+    
+        <div class="card one">
+            <img src="./P1.jpg" class="ph" alt="perippa staring" height="400"/>
+            <h2><span class="title">CUTE</span></h2>
+            <p>The image you see here is a cute image of jai harish giving a 
+                rizzy look towards the viewers.<br/>
+                <span class="title">17TH APRIL</span> 
+            </p>
+        </div>
+        <div class="card two"> 
+            <img src="./P2.jpg" class="ph" alt="perippa smiling"/>
+            <h2><span class="title"> SMILE</h2></span>
+            <p>This photo is taken during the Group Dicussion, where 
+                Jai Harish patiently did nothing .This ultimately shows
+                his masterplanning skills.He smiles like a pure-holy baby
+                <br/><span class="title">24TH NOVEMBER</span> </p>
+        </div></div>
+    <div class="main">  
+        <div class="card three"> <img src="./P3.jpg" class="ph" alt="perippa frustrated" height="400"/>
+            <h2><span class="title">FRUSTRATED</span></h2>
+            <p>This lovely photo was taken when jai harish was constantly annoyed by his beloved friends
+                when he was preparing for that day's test. The goofy face could be seen 
+                in his fellow classmate.<br/><span class="title">4th NOVEMBER</span>
+            </p>
+        </div>
+        <div class="card four">
+            <img src="./P4.jpg" alt="stylish friends" class="ph"/>
+            <h2><span class="title">STYLISH</span></h2>
+            <p>This image of him being with his beloved stylish friends
+                is taken in his college campus. Each person facing different
+                sides which adds more beauty to this wonderful photo.<br/>
+                <span class="title">16TH OCTOBER</span>
+            </p>
+        </div>
+    </div>
+    <footer>CREDITS: FUZAYL AMEEN</footer>
+</body>
+</html>
